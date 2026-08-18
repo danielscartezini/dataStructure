@@ -40,4 +40,11 @@ public class Lista {
 			ponteiro.getProximo().setProximo(ponteiro.getAnterior());
 		}
 	}
+	public void imprimir(){
+		No ponteiro = cabeca;
+		while (ponteiro != null){
+			System.out.println(ponteiro.getNumero());
+			ponteiro = ponteiro.getProximo();
+		}		 
+	}
 }
