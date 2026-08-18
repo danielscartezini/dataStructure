@@ -1,0 +1,45 @@
+
+public class No {
+	private int numero = 0;
+	private No anterior = null;
+	private No proximo = null;
+	
+// Metodos Construtores da Classe
+	// construtor vazio
+	public No() {
+		super();
+	}
+
+	// construtor cheio
+	public No(int numero, No anterior, No proximo) {
+		super();
+		this.numero = numero;
+		this.anterior = anterior;
+		this.proximo = proximo;
+	}
+	
+// Metodos de Acesso da Classe	
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public No getAnterior() {
+		return anterior;
+	}
+
+	public void setAnterior(No anterior) {
+		this.anterior = anterior;
+	}
+
+	public No getProximo() {
+		return proximo;
+	}
+
+	public void setProximo(No proximo) {
+		this.proximo = proximo;
+	}	
+}
