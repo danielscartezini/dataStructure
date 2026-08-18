@@ -34,6 +34,10 @@ public class Lista {
 		if(ponteiro == null) {
 			return;
 		}
-		
+
+		ponteiro.getAnterior().setProximo(ponteiro.getProximo());
+		if (ponteiro.getProximo() != null){
+			ponteiro.getProximo().setProximo(ponteiro.getAnterior());
+		}
 	}
 }
