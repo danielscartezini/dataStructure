@@ -1,0 +1,34 @@
+public class Arvore {
+	private No raiz;
+	
+	// método de acesso inserir
+	public void inserir(int numero) {
+		// recebe uma raiz velha e transforma na nova
+		raiz = inserir(raiz, numero);
+	}
+	
+	// método privado inserir
+	private No inserir(No raiz, int numero) {
+		// Cenário MUITO fácil: árvore vazia
+		if (raiz == null) {
+			return new No(numero, null, null, null, null, null);
+		}
+		
+		// Cenário difícil: árvore NÃO vazia
+		int sorteio = (1 + ((int) (5 * Math.random())));
+		
+		if (sorteio == 1) {
+			raiz.setFilho1(inserir(raiz.getFilho1(), numero));
+		} else if (sorteio == 2) {
+			raiz.setFilho2(inserir(raiz.getFilho2(), numero));
+		} else if (sorteio == 3) {
+			raiz.setFilho3(inserir(raiz.getFilho3(), numero));
+		} else if (sorteio == 4) {
+			raiz.setFilho4(inserir(raiz.getFilho4(), numero));
+		} else {
+			raiz.setFilho5(inserir(raiz.getFilho5(), numero));
+		}
+	
+		return raiz;
+	}
+}

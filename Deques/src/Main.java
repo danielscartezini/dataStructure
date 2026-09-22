@@ -24,15 +24,12 @@ public class Main extends Thread {
 		try {
 			int numero = 0;
 			if (tipo) {
-				boolean normal = (((int)(2*Math.random())) < 1);
+				boolean normal = (((int)(2*Math.random())) > 0);
 				objDeque.entrar(normal, normal ? numero : 1000 * numero);
 				numero++;
 			} else {
 				objDeque.atender();
 			}
-		}catch (Exception e){
-			
-		}
+		}catch (Exception e){}
 	}
-
 }

@@ -1,0 +1,22 @@
+
+public class Arvore {
+	private No raiz;
+	
+	// método de acesso inserir do usuário
+	public void inserir(int numero) {
+		raiz = inserir(raiz, numero);
+	}
+	
+	// método privado inserir
+	private No inserir(No raiz, int numero) {
+		// Cenário MUITO fácil: árvore vazia
+		if (raiz == null) {
+			return new No(numero, null, null, null, null, null);
+		}
+		
+		// Cenário difícil: árvore não está vazia
+		int sorteio = (1 + ((int) (5 * Math.random())));
+		
+		
+	}
+}
