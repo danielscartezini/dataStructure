@@ -1,4 +1,4 @@
-# Repositório dedicado a implantação de projetos e trabalhos desenvolvidas durante a diciplina de Estrutura de dados 
+# Repositório dedicado a implantação de projetos e trabalhos desenvolvidos durante a diciplina de Algorítmos e Estrutura de dados 
 
 # Ferramentas e Ferramentas utilizadas
   1. Linguagem: Java
