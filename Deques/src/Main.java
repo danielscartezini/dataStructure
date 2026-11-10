@@ -12,10 +12,10 @@ public class Main extends Thread {
 	public static void main(String[] args) {
 		Deque objDeque = new Deque();
 		
-		new Principal(objDeque, false).start();
-		new Principal(objDeque, true).start();
+		new Main(objDeque, false).start();
+		new Main(objDeque, true).start();
 		
-		while (Thread.activecount() > 0) {
+		while (Thread.activeCount() > 0) {
 			
 		}
 	}
